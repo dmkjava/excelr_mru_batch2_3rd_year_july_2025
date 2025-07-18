@@ -5,4 +5,7 @@ users list from jsonplace holder
 3) bootstrap 
 4)table bootstrap classes 
 
-7702477255
+we have to install bootstrap 
+
+stop running project 
+npm i bootstrap 
