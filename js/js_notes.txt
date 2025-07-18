@@ -1,0 +1,123 @@
+spred operator (...)
+====================
+spred operator is used to transpose the elements 
+from one container to another container, 
+along with this operation, 
+we can add few more elements. 
+we can update existed elements by overriding them.
+
+this spred operator can be used on following 2 things.
+1)spred operator with arrays 
+2)spred operator with objects. 
+
+
+1)spred operator with arrays 
+===============================
+var nos = [10, 20, 30, 40]
+how to add one element that is 50 at end of it.
+nos.push(50)
+
+using with spred operator 
+===========================
+ nos = [...nos, 50]
+
+spred operator with object literals 
+====================================
+emp = {
+    empNo: 101, 
+    empName: "Anil", 
+    job: "Business Analyst"
+} 
+adding new element to object literal 
+emp.salary = 56000;
+
+destructuring 
+==================
+destructuring is used extract the elements from 
+respective containers into local variables.
+ex: 
+var nos = [10, 20, 30, 40]
+let firstElement = nos[0];
+let secondElement = nos[1]
+
+destructuring can be applicable with following 2 things. 
+
+1)destructuring with arrays  
+2)destructuring with objects 
+
+1)destructuring with arrays
+===========================
+destructuring with arrays is working with 
+respective indexes. 
+indexes is playing key role. 
+
+var nos = [10, 20, 30, 40]
+let [firstElement, secondElement] = nos;
+
+first class citezen 
+call back function 
+higher order function 
+
+first class citezen 
+===================
+function definitions can be assignable to 
+variables just like values, or expressions
+this kind of behaviour cauese, 
+functions are treated as first class citezen.
+
+call back function
+==================
+since functions are treated as first class citezen, 
+then functions can be passesed as arguments to some 
+other functionas, 
+this kind of behaviour is called as call back functin, 
+by the time of passing functions as arguments, 
+it should not carry paranthesis.
+
+higher order function
+====================
+a function can take some other function as 
+argument, 
+or 
+a function can return some other function.
+if any one of the behaviour or both 
+can be treated as higher order functions.
+
+few examples 
+================
+map() 
+forEach()
+filter() 
+reduce() 
+etc. 
+
+map()
+=======
+1)it is the member function of the array. 
+2)it is a higher order function. 
+3)it takes some other function as argument. 
+4)map() process the each element of the array 
+    and passes as an argument to its call-back function.
+5)the call-back function will modify this argument 
+    as per the business requirement and return back.    
+6)the map() captures this return values and 
+maintain in its internal array. 
+7)at end of the source array, map function returns 
+its internal array as result. 
+8)In this process source is not get effected,   
+ex: 
+var nos = [10, 20, 30, 40]  
+task : add 2 on each element 
+result = [12, 22, 32, 42]
+
+result = nos.map((el)=>el + 2)
+
+forEach():
+===========
+forEach () is same as map().
+map() maintains internal array .
+forEach () does not maintain internall array.
+
+filter ()
+========
+

@@ -1,0 +1,8 @@
+users list from jsonplace holder 
+=======================
+1)useEffect() 
+2)fetch () api I am using 
+3) bootstrap 
+4)table bootstrap classes 
+
+7702477255
