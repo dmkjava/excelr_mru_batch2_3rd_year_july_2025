@@ -9,3 +9,22 @@ we have to install bootstrap
 
 stop running project 
 npm i bootstrap 
+
+========================
+develop ecommerse app 
+====================
+
+https://dummyjson.com/products
+
+boortsterap card 
+
+card 
+card-title 
+card-top-image 
+card-body 
+
+flex 
+====
+display = flex; 
+justify-content;
+
