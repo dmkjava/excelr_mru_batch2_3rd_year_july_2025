@@ -11,8 +11,8 @@ function App() {
       {/* <h3>Hi</h3> */}
       {/* <UsersListApp></UsersListApp> */}
       {/* <CounterApp></CounterApp> */}
-      {/* <DummyJsonEcommerseApp></DummyJsonEcommerseApp> */}
-      <HotelApp></HotelApp>
+      <DummyJsonEcommerseApp></DummyJsonEcommerseApp>
+      {/* <HotelApp></HotelApp> */}
     </div>
   );
 }

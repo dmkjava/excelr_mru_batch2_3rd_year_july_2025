@@ -14,8 +14,19 @@ function DummyJsonEcommerseApp(){
     return (
         <div className='container'>
             <h3>DummyJson Ecommerse App</h3>
-            
+            <div className="row my-4">
+                <div className="col-3 text-end">
+                    <label for="">Enter Intem for Searching</label>
+                </div>
+                <div className="col-6">
+                    <input type="text" className="form-control" />
+                </div>
+                <div className="col-3 text-start">
+                    <button className="btn btn-primary">Seach</button>
+                </div>
+            </div>
             <div className='flex-container'>
+
                 {
                     productsList.map(product=>{
                         return <div key={product.id}
