@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9aaf14f3.css",
+    "main.js": "/static/js/main.ce44e489.js",
+    "static/js/453.9f6cca03.chunk.js": "/static/js/453.9f6cca03.chunk.js",
+    "static/media/chapathi.jpeg": "/static/media/chapathi.d193d7760b08d45462b8.jpeg",
+    "static/media/dosa.jpeg": "/static/media/dosa.96bff07608b9ba229901.jpeg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.9aaf14f3.css.map": "/static/css/main.9aaf14f3.css.map",
+    "main.ce44e489.js.map": "/static/js/main.ce44e489.js.map",
+    "453.9f6cca03.chunk.js.map": "/static/js/453.9f6cca03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aaf14f3.css",
+    "static/js/main.ce44e489.js"
+  ]
+}
