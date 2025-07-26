@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import chapathi from '../../assets/hotel/imgs/chapathi.jpeg';
+import useTitle from './use_title';
 
 function Chapathi(){
+    // useEffect(()=>{
+    //     document.title = "Chapathi";
+    // }, [])
+    useTitle("Chapathi");
     return (
         <div>
             <h3>Chapathi</h3>

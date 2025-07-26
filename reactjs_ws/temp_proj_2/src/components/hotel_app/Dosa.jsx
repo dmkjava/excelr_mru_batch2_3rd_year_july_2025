@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import dosa from '../../assets/hotel/imgs/dosa.jpeg';
+import useTitle from './use_title';
 
 function Dosa(){
+    // useEffect(()=>{
+    //         document.title = "Dosa";
+    //     }, [])
+    useTitle("Dosa");
     return (
         <div>
             <h3>Dosa</h3>

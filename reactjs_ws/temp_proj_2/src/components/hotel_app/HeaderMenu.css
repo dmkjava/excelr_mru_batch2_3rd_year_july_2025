@@ -17,6 +17,9 @@ header nav{
     line-height: 90px;
     /* margin-left: 50px; */
 }
+.logo:hover{
+    cursor: pointer;
+}
 header nav ul{
     float: right;
     margin-right: 50px;

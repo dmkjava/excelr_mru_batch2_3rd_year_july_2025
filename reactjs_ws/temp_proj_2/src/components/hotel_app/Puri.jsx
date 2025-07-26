@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import puri from '../../assets/hotel/imgs/puri.jpeg';
+import useTitle from './use_title';
 
 function Puri(){
+    // useEffect(()=>{
+    //             document.title = "Puri";
+    //         }, [])
+    useTitle("Puri");
     return (
         <div>
             <h3>Puri</h3>

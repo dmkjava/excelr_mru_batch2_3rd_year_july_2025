@@ -1,11 +1,13 @@
 import './HeaderMenu.css';
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 function HeaderMenu(){
+    const navigate = useNavigate();
     return (
         <header>
             <nav>
-                <span class="logo">MyZomoto</span>
+                <span className="logo" onClick={()=>navigate('/')}>MyZomoto</span>
                 <ul>
+
                     <li><NavLink to="idly">Idly</NavLink></li> 
                     <li><NavLink to="vada">Vada</NavLink></li>
                     <li><NavLink to="upma">Upma</NavLink></li>

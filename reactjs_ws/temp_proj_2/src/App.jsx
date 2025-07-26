@@ -12,6 +12,7 @@ import DummyJsonEcommerseApp from './components/dummy_json_ecommerse_app/DummyJs
 import TogglingAppUsingRef from './components/toggling_app_using_ref/TogglingAppUsingRef'
 import ParentToChildDemo from './components/props_demo/parent_to_child/ParentToChildDemo'
 import ChildToParentDemo from './components/props_demo/child_to_parent/ChildToParentDemo'
+import UseReduceDemo from './components/use_reduce_demo/UseReduceDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,7 +29,8 @@ function App() {
       {/* <MirrorImage></MirrorImage> */}
       {/* <TogglingAppUsingRef></TogglingAppUsingRef> */}
       {/* <ParentToChildDemo></ParentToChildDemo> */}
-      <ChildToParentDemo></ChildToParentDemo>
+      {/* <ChildToParentDemo></ChildToParentDemo> */}
+      <UseReduceDemo></UseReduceDemo>
       
     </>
   )

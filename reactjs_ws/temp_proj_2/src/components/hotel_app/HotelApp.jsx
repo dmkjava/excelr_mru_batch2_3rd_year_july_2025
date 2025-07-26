@@ -7,12 +7,13 @@ import MysoreBonda from './MysoreBonda';
 import Dosa from './Dosa';
 import Puri from './Puri';
 import Chapathi from './Chapathi';
+import Home from './Home';
 function HotelApp(){
     return (
         <BrowserRouter>
             <HeaderMenu></HeaderMenu>
             <Routes>
-                {/* <Route path="" element={}></Route> */}
+                <Route path="/" element={<Home></Home>}></Route>
                 <Route path="/idly" element={<Idly></Idly>}></Route>
                 <Route path="/vada" element={<Vada></Vada>}></Route>
                 <Route path="/upma" element={<Upma></Upma>}></Route>

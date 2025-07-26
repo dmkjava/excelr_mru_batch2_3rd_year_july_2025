@@ -57,3 +57,29 @@ To meet this requirement, parent component should pass
 a function prop with argument has to be passed to child component. 
 
 
+26-July-2025
+============
+
+programmatical navigation 
+============================
+programmatical navigation we can achieve in function components 
+by using useNavigate() hook. 
+
+working with custom hooks 
+===========================
+custom hook name shoud be prefix with useXxx().
+
+useState()
+useEffect() 
+useRef() 
+useNavigate() 
+
+rules to use hooks 
+======================
+hooks should be used top level of the component.
+hooks are developed for the purpose of functional components. 
+Not allowed to use under conditional statements, 
+loop statements. 
+Not allowed to used in nested functions. 
+hooks look like as normal js fuctions, 
+but ment to use only in side of react functional components. 

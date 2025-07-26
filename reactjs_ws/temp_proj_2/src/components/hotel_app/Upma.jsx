@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
 import upma from '../../assets/hotel/imgs/upma.jpeg';
+import useTitle from './use_title';
 
 function Upma(){
+    // useEffect(()=>{
+    //                 document.title = "Upma";
+    //             }, [])
+    useTitle("Upma");
     return (
         <div>
             <h3>Upma</h3>
