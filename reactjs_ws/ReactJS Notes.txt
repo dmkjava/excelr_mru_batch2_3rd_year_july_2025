@@ -28,3 +28,32 @@ flex
 display = flex; 
 justify-content;
 
+working with useRef() hook 
+========================
+useRef() hook allowes us to access the elemnt DOM object 
+directly and allowed to modify element properties. 
+technically it is technically called as uncontrolled elements also. 
+
+props 
+========
+props is a built in object. 
+which is used pass the data between components. 
+It is acting as bridge between components to exchange the data. 
+
+we can do this communication in 2 ways 
+1)parent to child component 
+2)child to parent component. 
+
+note: props is a read only object. 
+
+1)parent to child component
+===========================
+It is very simple approach, like html attributes syntax, 
+we are sending data to child component. 
+child componet function has props as argument, which is receiving the data. 
+
+2)child to parent component. 
+To meet this requirement, parent component should pass 
+a function prop with argument has to be passed to child component. 
+
+
