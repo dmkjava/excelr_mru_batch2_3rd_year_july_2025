@@ -1,0 +1,284 @@
+what is the dbms?
+what is the rdbms?
+
+mysql? 
+It is initially developed by mysql 
+later it is aquired by sun micro system. 
+later it is aquired by Oracle 
+
+basic data types 
+==================
+string 
+===== 
+char 
+varchar 
+numeri type data 
+==================
+int 
+bigint 
+float 
+double 
+decimal 
+
+date type data 
+================
+date 
+datetime
+
+create a emp table with following structure 
+==========================================
+emp        
+empno   int  
+ename   varchar(50)
+job     varchar(50)
+mgr     int
+hiredate    date
+sal     decimal
+comm    decimal
+deptno  int
+
+
+Install MySQL/PostgreSQL, 
+Create database, 
+create simple table, 
+insert sample records
+CREATE, 
+ALTER, 
+DROP, 
+RENAME, 
+Data Types, 
+Constraints (
+    NOT NULL, UNIQUE, 
+    PRIMARY KEY, FOREIGN KEY, 
+    DEFAULT, CHECK)
+
+
+Constraints in SQL are rules applied to columns or entire tables within a relational database to enforce data integrity and ensure the accuracy, consistency, and reliability of the stored information. They restrict the type of data that can be entered, updated, or deleted, preventing invalid or inconsistent data from corrupting the database. 
+
+NOT NULL:
+Ensures that a column cannot contain NULL values, requiring an explicit value for every row in that column.
+
+UNIQUE:
+Guarantees that all values in a specified column or set of columns are distinct, preventing duplicate entries.
+
+PRIMARY KEY:
+Uniquely identifies each row in a table. It combines the NOT NULL and UNIQUE constraints and serves as the primary identifier for records within the table.
+
+
+FOREIGN KEY:
+Establishes a link between data in two tables, enforcing referential integrity. It ensures that values in a column (or set of columns) in one table correspond to values in a primary key or unique key in another table.
+
+CHECK:
+Enforces a specific condition on the values in a column, ensuring that only data meeting the defined criteria can be entered.
+
+DEFAULT:
+Assigns a default value to a column if no value is explicitly provided during an INSERT operation.
+
+
+select clause 
+==================
+select clause used to retrieve the data from table. 
+ex: 
+select colum1, column2, colum3 etc... from table_name; 
+
+display empno, emp name , job and salary details of emp table
+select empno, ename, job, sal from emp;
+whild character - * 
+which is used to represent all columns of the table
+
+display all columns of the table.
+
+select * from emp;
+
+arithmetic operators 
+======================
++
+-
+*
+/
+%
+
+provide 150 as bonus on each salary.
+select empno, ename, job, sal, sal + 150 from emp;
+
+calculate gst as 18%
+select empno, ename, job, sal, sal*18/100 from emp;
+
+field alias names 
+=================
+filed alias names are provide after filed or column 
+usually by using as keyword. 
+
+select empno, ename, job, 
+sal, sal*18/100 as gst from emp;
+
+find the net salary 
+sal - gst 
+
+working with null values 
+==========================
+is null 
+is not null 
+
+display all employees who are getting commision.
+
+select * from emp where comm is null;
+
+working with where clause 
+=============================
+where clause allowes us to applica some conditions 
+and retrieve the date , the records 
+which satisfies the condition. 
+
+relational operators 
+======================
+>
+>= 
+<
+<= 
+== 
+!= 
+
+display all emp who are working for deptno 10
+display all emp who are working for deptno 20
+display all emp who are working for deptno 30
+
+display all emp who are working as job 'CLERK';
+display all emp who are working as job 'MANAGER';
+display all emp who are working as job 'SALESMAN';
+display all emp who are working as job 'ANALYST';
+
+display all emp whose salary is more than 2500; 
+select * from emp where sal > 2500;
+display all emp whose salary is balow  2500; 
+select * from emp where sal < 2500;
+
+logical operators 
+=================
+and 
+or 
+not 
+
+display all emp whose salary is 
+above 2000 and below 4000;
+
+select * from emp where sal>=2000 and sal<=4000;
+
+sql operators 
+===============
+between 
+not between 
+in 
+not in 
+
+is null 
+is not nul
+
+display all emp whose salary is 
+above 2000 and below 4000 using between 
+
+display all emp whose salary is 
+below 2000 and above 4000;
+or 
+display all emp whose salary is 
+not in the range of above 2000 and below 4000
+
+display all employees who are working 
+in deptno either 10 or 30;
+
+arithmetic operators 
+relational operators 
+logical operators 
+sql operators 
+
+select clause 
+where clause 
+order by clause 
+It is used arrange the data in sorting order 
+based on specified column or multiple columns. 
+
+display all employees in soring order based on 
+salaries asscending order 
+
+display all employees in soring order based on 
+salaries descending order
+
+display all employees in soring order based on 
+emp names 
+
+display all employees in soring order based on 
+jobs 
+
+display all employees in soring order based on 
+deptno
+
+limit clause 
+============
+it is used to fetch specified no of records 
+
+suppose we say limit 5; 
+only top 5 records will be fetched. 
+
+display first 3 recods of the emp table; 
+display first 5 recods of the emp table;
+display first 2 recods of the emp table;
+
+display top 3 salaried employees details;
+display first 3 smallest salaried employees details;
+
+working with distinct clause 
+===============================
+It is used to get the unique data from specified column
+Note: this kind of distinct can be 
+applicable only on grouping columns ex 
+dept, and job and mgr, or hiredate etc. 
+
+requirement: 
+display all department no which are available. 
+select distinct deptno from;
+display all jobs which are available.
+select distinct job from emp;
+
+INSERT, 
+UPDATE, 
+DELETE, 
+WHERE clause, 
+ORDER BY, 
+LIMIT
+
+INSERT,:it is used to insert the record into table.  
+    syntax: 
+    insert into table_name values (
+        data for all fields separated by columns
+    )
+    or
+    insert into (list of selected columns) 
+    values (data for selected columns)
+
+    inserting one record with full data.
+
+    insert into emp values (101, "Anil", "Business Analyst", 7836, date('2022-5-12'), 4500, NULL, 10)
+UPDATE, : to modify the data 
+    while modifying the data using where clause 
+    is recommended then updations 
+    will be applicable for only those records,
+    which are qualified by where clause.
+
+    ex: increse anil salary by 200 dollars.
+    update table_name set column_name1=new_data,  
+    column_name2=new_data,
+    where clause;
+    update emp set sal = sal + 200 where empno = 101;
+DELETE, 
+WHERE clause, 
+ORDER BY, 
+LIMIT
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+SELECT * FROM excelr_mru_batch2_db.emp;
+
+SELECT * FROM excelr_mru_batch2_db.emp;
+
+select empno, ename, job, sal from emp;-- 
+
+select * from emp;
+
+select empno, ename, job, sal, sal + 150 from emp;
+
+select empno, ename, job, sal, sal*18/100 as gst from emp;
+
+select empno, ename, job, sal, sal*18/100 as gst, 
+sal - sal*18/100 as net_sal from emp;
+
+select * from emp where comm is not null;
+
+SELECT * FROM EMP WHERE DEPTNO = 10;
+SELECT * FROM EMP WHERE DEPTNO = 20;
+SELECT * FROM EMP WHERE DEPTNO = 30;
+
+select * from emp where sal>=2000 and sal<=4000;
+
+select * from emp where sal between 2000 and 4000;
+
+select * from emp where sal not between 2000 and 4000;
+
+select * from emp where deptno = 10 or deptno = 30;
+select * from emp where deptno in (10, 30);
+
+select * from emp order by ename;
+select * from emp order by job;
+select * from emp order by deptno;
+select * from emp order by sal;
+select * from emp order by sal desc;
+
+select * from emp limit 2;
+select * from emp order by sal limit 3;
+select * from emp order by sal desc limit 3;
+select distinct job from emp order by job;
+select distinct deptno from emp order by deptno;
+
+insert into emp values (101, "Anil", "Business Analyst", 7836, 
+date('2022-5-12'), 4500, NULL, 10);
+insert into emp (empno, ename, job, sal, deptno) 
+values (102, "Bharath", "Manager" , 6800, 30);
+
+select * from emp;
+update emp set sal = sal + 200 where empno = 101;
+
